@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:guinos/views/screens/home_screen.dart';
 
 class MainScaffold extends StatelessWidget {
@@ -12,14 +13,14 @@ class MainScaffold extends StatelessWidget {
         titleTextStyle: TextStyle(
           color: Theme.of(context).colorScheme.onPrimary,
           fontFamily: "Lora",
-          fontSize: 22,
+          fontSize: 24,
         ),
         centerTitle: true,
         elevation: 0,
         leading: Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () => SystemNavigator.pop(),
               icon: const Icon(
                 Icons.arrow_back_ios,
               ),
